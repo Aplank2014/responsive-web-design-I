@@ -198,9 +198,9 @@ h1 {
 .col-container{
 	display: flex;
 	margin-top: 2%;
+	
 }
 .Features, .About {
-	width: 49%;
 	justify-content: space-around;
 	margin: 2%;
 }
@@ -209,6 +209,7 @@ h1 {
 	justify-content: space-around;
 	margin-top: 4%;
 	margin-bottom: 4%;
+	
 }
 p {
 	display: flex;
@@ -229,7 +230,6 @@ address, phone, email {
 	font-family: 'Titillium Web', sans-serif;
 }
 footer {
-	text-align: center;
 	margin: 5%;
 }
 .services-header-img {
@@ -292,16 +292,65 @@ footer {
 	flex-wrap: wrap;
 	justify-items: space-between;
 }	
-@media screen and (max-width: 800px) {
-    body {
-      width: 800px;
-     
-    }
+@media (max-width: 800px) {
+	.container {
+		width: 80%;
+		display: flex;
+		flex-direction: column;
   }
-  @media screen and (max-width: 500px) {
-    body {
-      width: 500px;
-    }
+  	.header {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
   }
+	.logo {
+		display: flex;
+		order: 1;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+	}
+  	.hero-right .roundimage {
+	  display: none;
+  }
+	.col-3-container {
+		padding-bottom: 5%;
+}
+	footer {
+		align-items: center;
+		justify-content: center;
+}
+}
 
-
+@media (max-width: 500px) {
+	nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	  }
+  
+	  header nav a {
+		border: 1px solid black;
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+				
+	  }
+  
+	  .logo {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 20px;
+		
+	  }
+	  .col-container {
+		display: flex;
+		flex-direction: column;
+	}
+	  .col-3-container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+}
