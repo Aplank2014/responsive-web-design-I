@@ -207,8 +207,8 @@ h1 {
 .col-3-container {
 	display: flex;
 	justify-content: space-around;
-	margin-top: 4%;
-	margin-bottom: 4%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 	
 }
 p {
@@ -221,7 +221,7 @@ p {
 	width: 30%;
 }
 .contact {
-	margin-top: 4%;
+	margin: 2%;
 	font-family: 'Bangers', cursive;
 	display: block;
 }
@@ -229,9 +229,10 @@ address, phone, email {
 	display: block;
 	font-family: 'Titillium Web', sans-serif;
 }
-footer {
-	margin: 5%;
+#mainFooter {
+	margin: 0 auto;
 }
+
 .services-header-img {
 	margin-top: 5%;
 	margin-left: 3%;
@@ -292,65 +293,100 @@ footer {
 	flex-wrap: wrap;
 	justify-items: space-between;
 }	
+
 @media (max-width: 800px) {
 	.container {
 		width: 80%;
 		display: flex;
-		flex-direction: column;
+		flex-direction: column;	
   }
+
   	.header {
 		display: flex;
 		flex-direction: column-reverse;
-		align-items: center;
   }
-	.logo {
-		display: flex;
-		order: 1;
-		flex-direction: column;
-		align-items: center;
-		margin-bottom: 20px;
-	}
-  	.hero-right .roundimage {
+	
+	.roundimage {
 	  display: none;
+  }
+ 	.col-container {
+		border-top: 2px solid black;
   }
 	.col-3-container {
 		padding-bottom: 5%;
+		border-bottom: 2px solid black;
 }
-	footer {
-		align-items: center;
-		justify-content: center;
-}
+	#mainfooter {
+		margin: 0 auto;	
+		align-content: center;
+	}
 }
 
 @media (max-width: 500px) {
+	.container {
+		width: 100%;
+	}
+
 	nav {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		width: 100%;
 	  }
   
-	  header nav a {
-		border: 1px solid black;
+	  header nav a{
+		border-bottom: 1px solid black;
 		align-items: center;
 		display: flex;
 		flex-direction: column;
-				
+		width: 100%;
+		padding: 20px;		
 	  }
+
+	  .roundimage {
+		display: none;
+	}
   
 	  .logo {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-bottom: 20px;
-		
 	  }
+
+	  .services {
+		border-top: 1px solid black;
+	  }
+
+	  .hero-left .button{
+		width: 50%;
+	  }
+
 	  .col-container {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
+		
 	}
 	  .col-3-container {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
+	
+	}
+	.Services, .Product, .Vision{
+		width: 100%;
+		padding: 15px;
+	}
+	.services-info-img {
+		width: auto ;
+		max-width: 100% ;
+		height: auto ;
+	}
+	.someFacts {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
 	}
 }
+
+
