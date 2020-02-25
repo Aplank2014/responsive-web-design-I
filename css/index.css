@@ -154,13 +154,12 @@ h1, h2, h3, h4, h5 {
 
 h1 {
 	font-family: 'Bangers', cursive;
-	font-size: 80px;
+	font-size: 70px;
 	box-sizing: border-box;
 	margin: 10%;
-	height: 200px;
-	padding: 10px;
+	height: 100px;
+	padding-bottom: 8%;
 	text-align: center;
-	margin-bottom: 8%;
 }
 
 .hero {
@@ -188,6 +187,7 @@ h1 {
 	margin-left: 30%;
 	color: black;
 	text-align: center;
+	align-content: center;
 }
 
 .roundimage {
@@ -336,6 +336,7 @@ address, phone, email {
 		margin: 0 auto;	
 		align-content: center;
 		padding: 10px;
+		padding-bottom: 4%;
 		
 	}
 	.roundimage {
